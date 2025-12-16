@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Психологическая помощь | Борьба с насилием | Екатеринбург</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-hands-helping"></i>
+                <span>ПомощьРядом</span>
+            </div>
+            <nav>
+                <ul id="mainNav">
+                    <li><a href="#home" class="nav-link active" data-page="home">Главная</a></li>
+                    <li><a href="#helplines" class="nav-link" data-page="helplines">Телефоны доверия</a></li>
+                    <li><a href="#self-help" class="nav-link" data-page="self-help">Самопомощь</a></li>
+                    <li><a href="#resources" class="nav-link" data-page="resources">Ресурсы</a></li>
+                    <li><a href="#articles" class="nav-link" data-page="articles">Статьи</a></li>
+                    <li><a href="#contact" class="nav-link" data-page="contact">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Главная страница -->
+    <section id="home" class="page-content active">
+        <div class="hero">
+            <div class="container">
+                <h1>Психологическая помощь и поддержка</h1>
+                <p>Если вы столкнулись с насилием или находитесь в сложной психологической ситуации, вы не одни. Мы предоставляем информацию о телефонах доверия, службах помощи и инструментах самопомощи в Екатеринбурге.</p>
+                <button class="cta-button" id="emergencyBtn">Экстренная помощь</button>
+                <div class="emergency-banner">
+                    <i class="fas fa-exclamation-triangle"></i> Если вам угрожает непосредственная опасность, немедленно звоните 112 (экстренная служба)
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Быстрые ссылки -->
+            <section style="padding: 3rem 0;">
+                <h2 class="section-title">Быстрый доступ</h2>
+                <div class="tools-container">
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Телефоны доверия</h3>
+                        <p>Круглосуточные телефоны психологической помощи в Екатеринбурге</p>
+                        <button class="cta-button" style="margin-top: 1rem; padding: 8px 20px; font-size: 0.9rem;" data-page="helplines">Посмотреть все номера</button>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Помощь при насилии</h3>
+                        <p>Что делать, куда обращаться и как получить помощь</p>
+                        <button class="cta-button" style="margin-top: 1rem; padding: 8px 20px; font-size: 0.9rem;" data-page="violence-help">Подробнее</button>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Кризисные центры</h3>
+                        <p>Адреса и контакты центров помощи в Екатеринбурге</p>
+                        <button class="cta-button" style="margin-top: 1rem; padding: 8px 20px; font-size: 0.9rem;" data-page="crisis-centers">Найти центр</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Страница телефонов доверия -->
+    <section id="helplines" class="page-content">
+        <div class="detail-header">
+            <div class="container">
+                <button class="back-button" data-page="home">
+                    <i class="fas fa-arrow-left"></i> На главную
+                </button>
+                <h1>Телефоны доверия в Екатеринбурге</h1>
+                <p>Круглосуточные и специализированные службы психологической помощи</p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="detail-content">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3><i class="fas fa-info-circle"></i> Как пользоваться</h3>
+                        <p>Звонки на все номера бесплатные. Вы можете звонить анонимно. Психологи готовы выслушать вас и оказать поддержку в любое время.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-clock"></i> Когда звонить</h3>
+                        <p>Не ждите, пока ситуация станет критической. Звоните, если чувствуете тревогу, страх, растерянность или нуждаетесь в совете.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-shield-alt"></i> Конфиденциальность</h3>
+                        <p>Все разговоры остаются строго конфиденциальными. Ваше имя и личные данные не разглашаются.</p>
+                    </div>
+                </div>
+                
+                <h2 style="margin: 2rem 0 1.5rem; color: var(--primary-color);">Телефоны экстренной помощи</h2>
+                
+                <div id="helplinesContainer" class="helplines-container">
+                    <div class="loading">
+                        <div class="loading-spinner"></div>
+                        <p>Загружаем информацию о телефонах доверия...</p>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 3rem;">
+                    <h3>Не нашли нужный номер?</h3>
+                    <p>Свяжитесь с нами, и мы поможем найти подходящую службу помощи</p>
+                    <button class="cta-button" style="margin-top: 1rem;" data-page="contact">Связаться с нами</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="self-help" class="page-content">
+        <div class="detail-header">
+            <div class="container">
+                <button class="back-button" data-page="home">
+                    <i class="fas fa-arrow-left"></i> На главную
+                </button>
+                <h1>Инструменты самопомощи</h1>
+                <p>Практические упражнения и ресурсы для улучшения психологического состояния</p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="detail-content">
+                <div class="tools-container">
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3>План безопасности</h3>
+                        <p>Составьте персональный план действий на случай опасной ситуации</p>
+                        <button class="cta-button" style="margin-top: 1rem; padding: 8px 20px; font-size: 0.9rem;" onclick="openSafetyPlanModal()">Создать план</button>
+                        <button class="secondary-button" style="margin-top: 0.5rem; padding: 6px 15px; font-size: 0.8rem;" data-page="safety-plan-details">Подробнее о плане</button>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Техники релаксации</h3>
+                        <p>Аудио-упражнения для снижения тревоги и управления стрессом</p>
+                        <button class="cta-button" style="margin-top: 1rem; padding: 8px 20px; font-size: 0.9rem;" onclick="openRelaxationModal()">Начать упражнение</button>
+                        <button class="secondary-button" style="margin-top: 0.5rem; padding: 6px 15px; font-size: 0.8rem;" data-page="relaxation-techniques">Другие техники</button>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Дневник эмоций</h3>
+                        <p>Отслеживайте свое эмоциональное состояние для лучшего самопонимания</p>
+                        <button class="cta-button" style="margin-top: 1rem; padding: 8px 20px; font-size: 0.9rem;" onclick="openJournalModal()">Открыть дневник</button>
+                        <button class="secondary-button" style="margin-top: 0.5rem; padding: 6px 15px; font-size: 0.8rem;" data-page="emotional-journal-guide">Как вести дневник</button>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 3rem;">
+                    <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;">Дополнительные ресурсы</h2>
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h3><i class="fas fa-bed"></i> Техника заземления 5-4-3-2-1</h3>
+                            <p>Помогает справиться с паническими атаками и сильной тревогой. Назовите: 5 вещей, которые видите, 4 вещи, которые чувствуете, 3 вещи, которые слышите, 2 вещи, которые нюхаете, 1 вещь, которую пробуете.</p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h3><i class="fas fa-hand-holding-heart"></i> Самосострадание</h3>
+                            <p>Научитесь относиться к себе с добротой, особенно в трудные моменты. Практикуйте самоодобрение вместо самокритики.</p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h3><i class="fas fa-brain"></i> Когнитивная переоценка</h3>
+                            <p>Техника изменения негативных мыслей на более реалистичные и конструктивные. Помогает справиться с катастрофизацией.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="violence-help" class="page-content">
+        <div class="detail-header">
+            <div class="container">
+                <button class="back-button" data-page="home">
+                    <i class="fas fa-arrow-left"></i> На главную
+                </button>
+                <h1>Помощь при насилии</h1>
+                <p>Что делать, куда обращаться и как получить помощь</p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="detail-content">
+                <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;">Шаги к безопасности</h2>
+                
+                <div style="margin: 2rem 0;">
+                    <div style="display: flex; align-items: flex-start; margin-bottom: 1.5rem; padding: 1.5rem; background-color: #f8f9fa; border-radius: var(--border-radius);">
+                        <div style="background-color: var(--primary-color); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">1</div>
+                        <div>
+                            <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Оцените опасность</h3>
+                            <p>Определите, насколько ситуация опасна для вас. Если есть непосредственная угроза - немедленно звоните 112.</p>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; align-items: flex-start; margin-bottom: 1.5rem; padding: 1.5rem; background-color: #f8f9fa; border-radius: var(--border-radius);">
+                        <div style="background-color: var(--primary-color); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">2</div>
+                        <div>
+                            <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Обратитесь за помощью</h3>
+                            <p>Позвоните на один из телефонов доверия. Специалисты помогут вам составить план действий и подскажут, куда обратиться.</p>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; align-items: flex-start; margin-bottom: 1.5rem; padding: 1.5rem; background-color: #f8f9fa; border-radius: var(--border-radius);">
+                        <div style="background-color: var(--primary-color); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">3</div>
+                        <div>
+                            <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Соберите доказательства</h3>
+                            <p>Сохраняйте переписки, фотографии, медицинские справки. Это может понадобиться для обращения в правоохранительные органы.</p>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; align-items: flex-start; margin-bottom: 1.5rem; padding: 1.5rem; background-color: #f8f9fa; border-radius: var(--border-radius);">
+                        <div style="background-color: var(--primary-color); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">4</div>
+                        <div>
+                            <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Обратитесь в кризисный центр</h3>
+                            <p>В Екатеринбурге есть центры, где можно получить временное жилье, психологическую и юридическую помощь.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="background-color: #fff8f8; border-left: 4px solid var(--danger-color); padding: 1.5rem; margin: 2rem 0; border-radius: 0 var(--border-radius) var(--border-radius) 0;">
+                    <h3 style="color: var(--danger-color); margin-bottom: 0.5rem;"><i class="fas fa-exclamation-circle"></i> Важно знать</h3>
+                    <p>Насилие - это не ваша вина. Вы имеете право на безопасность и уважительное отношение. Обращение за помощью - это проявление силы, а не слабости.</p>
+                </div>
+                
+                <div style="text-align: center; margin-top: 3rem;">
+                    <h3>Нужна срочная помощь?</h3>
+                    <p>Позвоните на телефон доверия или обратитесь в ближайший кризисный центр</p>
+                    <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap;">
+                        <button class="cta-button" data-page="helplines">Телефоны доверия</button>
+                        <button class="secondary-button" data-page="crisis-centers">Кризисные центры</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="crisis-centers" class="page-content">
+        <div class="detail-header">
+            <div class="container">
+                <button class="back-button" data-page="home">
+                    <i class="fas fa-arrow-left"></i> На главную
+                </button>
+                <h1>Кризисные центры Екатеринбурга</h1>
+                <p>Адреса и контакты центров помощи</p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="detail-content">
+                <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;">Центры помощи в Екатеринбурге</h2>
+                
+                <div class="helplines-container">
+                    <div class="helpline-card">
+                        <h3><i class="fas fa-home"></i> Кризисный центр для женщин</h3>
+                        <p style="margin: 1rem 0;"><strong>Адрес:</strong> ул. Белинского, 14</p>
+                        <p style="margin: 1rem 0;"><strong>Телефон:</strong> +7 (343) 385-73-83</p>
+                        <p style="margin: 1rem 0;"><strong>Услуги:</strong> временное проживание, психологическая помощь, юридические консультации</p>
+                        <p style="margin: 1rem 0;"><strong>Часы работы:</strong> круглосуточно</p>
+                    </div>
+                    
+                    <div class="helpline-card">
+                        <h3><i class="fas fa-user-friends"></i> Центр социально-психологической помощи "Диалог"</h3>
+                        <p style="margin: 1rem 0;"><strong>Адрес:</strong> ул. 8 Марта, 55</p>
+                        <p style="margin: 1rem 0;"><strong>Телефон:</strong> +7 (343) 251-29-04</p>
+                        <p style="margin: 1rem 0;"><strong>Услуги:</strong> психологические консультации, группы поддержки, тренинги</p>
+                        <p style="margin: 1rem 0;"><strong>Часы работы:</strong> пн-пт 9:00-18:00, сб 10:00-15:00</p>
+                    </div>
+                    
+                    <div class="helpline-card">
+                        <h3><i class="fas fa-child"></i> Центр помощи детям и подросткам</h3>
+                        <p style="margin: 1rem 0;"><strong>Адрес:</strong> ул. Мира, 31</p>
+                        <p style="margin: 1rem 0;"><strong>Телефон:</strong> +7 (343) 371-25-25</p>
+                        <p style="margin: 1rem 0;"><strong>Услуги:</strong> психологическая помощь детям, работа с семьей, реабилитация</p>
+                        <p style="margin: 1rem 0;"><strong>Часы работы:</strong> пн-пт 9:00-18:00</p>
+                    </div>
+                </div>
+                
+                <div style="background-color: #f0f8ff; padding: 1.5rem; border-radius: var(--border-radius); margin-top: 2rem;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;"><i class="fas fa-info-circle"></i> Что нужно знать при обращении</h3>
+                    <ul style="padding-left: 1.5rem;">
+                        <li style="margin-bottom: 0.5rem;">При обращении в кризисный центр возьмите с собой паспорт</li>
+                        <li style="margin-bottom: 0.5rem;">Все услуги предоставляются бесплатно</li>
+                        <li style="margin-bottom: 0.5rem;">Вы можете получить помощь анонимно</li>
+                        <li style="margin-bottom: 0.5rem;">В центрах работают психологи, социальные работники и юристы</li>
+                        <li>В некоторых центрах предусмотрено временное проживание</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="articles" class="page-content">
+        <div class="detail-header">
+            <div class="container">
+                <button class="back-button" data-page="home">
+                    <i class="fas fa-arrow-left"></i> На главную
+                </button>
+                <h1>Полезные статьи и материалы</h1>
+                <p>Информация о психологической помощи, правах и восстановлении</p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="detail-content">
+                <div class="article-grid">
+                    <div class="article-card">
+                        <div class="article-image">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <div class="article-content">
+                            <h3>Юридические аспекты защиты от насилия</h3>
+                            <p>Какие законы защищают жертв насилия, как подать заявление в полицию, какие доказательства нужны.</p>
+                            <a href="#" class="read-more" data-article="legal-aspects">Читать статью →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-card">
+                        <div class="article-image">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="article-content">
+                            <h3>Как восстановиться после психологической травмы</h3>
+                            <p>Практические шаги и техники для восстановления эмоционального состояния после пережитого насилия.</p>
+                            <a href="#" class="read-more" data-article="recovery">Читать статью →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-card">
+                        <div class="article-image">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <div class="article-content">
+                            <h3>Как поддержать близкого, пережившего насилие</h3>
+                            <p>Что говорить и делать, чтобы помочь, а что может навредить. Основы психологической поддержки.</p>
+                            <a href="#" class="read-more" data-article="support">Читать статью →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-card">
+                        <div class="article-image">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="article-content">
+                            <h3>Превентивные меры: как обезопасить себя</h3>
+                            <p>Практические советы по предотвращению опасных ситуаций и созданию безопасной среды.</p>
+                            <a href="#" class="read-more" data-article="prevention">Читать статью →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="page-content">
+        <div class="detail-header">
+            <div class="container">
+                <button class="back-button" data-page="home">
+                    <i class="fas fa-arrow-left"></i> На главную
+                </button>
+                <h1>Свяжитесь с нами</h1>
+                <p>Задайте вопрос или предложите сотрудничество</p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="detail-content">
+                <div class="info-grid">
+                    <div>
+                        <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;">Наши контакты</h2>
+                        <div style="margin-bottom: 2rem;">
+                            <p style="margin-bottom: 1rem;"><i class="fas fa-envelope" style="color: var(--secondary-color); margin-right: 10px;"></i> info@pomoshch-ryadom.ru</p>
+                            <p style="margin-bottom: 1rem;"><i class="fas fa-phone" style="color: var(--secondary-color); margin-right: 10px;"></i> +7 (343) 123-45-67</p>
+                            <p style="margin-bottom: 1rem;"><i class="fas fa-map-marker-alt" style="color: var(--secondary-color); margin-right: 10px;"></i> Екатеринбург, ул. Помощи, 10</p>
+                        </div>
+                        
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Мы в социальных сетях</h3>
+                        <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+                            <button class="secondary-button"><i class="fab fa-vk"></i> ВКонтакте</button>
+                            <button class="secondary-button"><i class="fab fa-telegram"></i> Telegram</button>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;">Форма обратной связи</h2>
+                        <div class="form-group">
+                            <label for="contactName">Ваше имя</label>
+                            <input type="text" id="contactName" class="form-control" placeholder="Иван Иванов">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactEmail">Email</label>
+                            <input type="email" id="contactEmail" class="form-control" placeholder="example@mail.ru">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactMessage">Сообщение</label>
+                            <textarea id="contactMessage" class="form-control" placeholder="Ваш вопрос или предложение..." rows="4"></textarea>
+                        </div>
+                        
+                        <button class="cta-button" id="sendMessageBtn">Отправить сообщение</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ПомощьРядом</h3>
+                    <p>Информационный ресурс о психологической помощи и борьбе с насилием в Екатеринбурге.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="#home" class="nav-link" data-page="home">Главная</a></li>
+                        <li><a href="#helplines" class="nav-link" data-page="helplines">Телефоны доверия</a></li>
+                        <li><a href="#self-help" class="nav-link" data-page="self-help">Самопомощь</a></li>
+                        <li><a href="#articles" class="nav-link" data-page="articles">Статьи</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> Экстренная служба: 112</li>
+                        <li><i class="fas fa-envelope"></i> info@pomoshch-ryadom.ru</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Екатеринбург, ул. Помощи, 10</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 ПомощьРядом. Все права защищены. Информация предоставляется в ознакомительных целях.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="emergencyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Экстренная помощь</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <p>Если вы находитесь в непосредственной опасности:</p>
+            <ul>
+                <li>Немедленно позвоните 112 (экстренная служба)</li>
+                <li>Позвоните в полицию по телефону 102</li>
+                <li>Если можете, уйдите в безопасное место</li>
+                <li>Обратитесь к соседям или прохожим за помощью</li>
+            </ul>
+            <div class="emergency-banner" style="margin-top: 1.5rem;">
+                <i class="fas fa-exclamation-circle"></i> Помните: обращаться за помощью - это правильно и важно!
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
